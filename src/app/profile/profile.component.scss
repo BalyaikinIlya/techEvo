@@ -1,0 +1,71 @@
+.profile {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &__avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 32px;
+  }
+  &__username {
+    flex: 1;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__admin {
+    font-size: 14px;
+    color: #fff;
+    background: #4f46e5;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.5s;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+  }
+}
+.userData {
+  display: flex;
+  gap: 20px;
+  &__dataItem {
+    padding: 29px 24px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    width: 376px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    justify-content: flex-start;
+  }
+}
+.dataItem {
+  &__title {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  &__data {
+    margin-top: 15px;
+    font-size: 30px;
+    color: #111827;
+    font-weight: 800;
+  }
+}

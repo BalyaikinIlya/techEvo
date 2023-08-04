@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<main class="catalogLayout">
+  <h1 class="catalogLayout__title">Каталог товаров</h1>
+  <div *ngIf="products" class="catalogLayout__itemList itemList">
+    <div
+      *ngFor="let product of products"
+      (click)="viewProductDetail(product.id)"
+      class="itemList__item item"
+    >
+      <img class="item__img" alt="123" [src]="product.thumbnail" />
+      <p class="item__text">{{ product.title }}</p>
+      <p class="item__text">{{ product.price }}$</p>
+    </div>
+  </div>
+</main>
+<app-footer></app-footer>
+у

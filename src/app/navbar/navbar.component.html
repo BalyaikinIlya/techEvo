@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar__logo logo">
+    <img [src]="imagePath" class="logo__img" alt="logo" />
+    <p class="logo__text">Tech</p>
+  </div>
+  <ul class="navbar__links links">
+    <li class="links__item" [routerLink]="['']">Главная</li>
+    <li class="links__item links__item-additional" [routerLink]="['/catalog']">
+      Каталог товаров
+    </li>
+  </ul>
+  <button *ngIf="!tokenValue" class="navbar__btn" [routerLink]="['/auth']">
+    Войти
+  </button>
+  <div *ngIf="tokenValue" class="user">
+    <p [routerLink]="['/profile']" class="user__login">{{ usernameValue }}</p>
+    <p class="user__role">{{ roleValue }}</p>
+    <button (click)="logout()" class="user__logout">Выход</button>
+  </div>
+</nav>

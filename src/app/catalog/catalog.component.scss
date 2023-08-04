@@ -1,0 +1,39 @@
+.catalogLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 60px 40px;
+  gap: 40px;
+  &__title {
+    font-size: 36px;
+  }
+}
+.itemList {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+.item {
+  cursor: pointer;
+  max-width: min-content;
+  &__text {
+    padding: 15px 20px;
+    word-wrap: break-word;
+  }
+  &__img {
+    width: 390px;
+    height: 192px;
+  }
+}

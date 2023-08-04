@@ -1,0 +1,38 @@
+.admin {
+  padding: 20px 50px;
+  &__content {
+    display: flex;
+    margin-top: 186px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 8px;
+  }
+}
+.item {
+  padding: 25px 24px;
+  width: 49.4%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  &-first {
+    border-right: 1px #e2e2e2 solid;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &__subtext {
+    color: #b6b6b6;
+    font-size: 14px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  transition: 0.7s;
+  &:hover {
+    scale: 1.02;
+  }
+}

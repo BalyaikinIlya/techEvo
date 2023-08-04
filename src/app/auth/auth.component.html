@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<main class="authLayout">
+  <form (submit)="onSubmit()" action="" class="authForm">
+    <div class="authForm__imgWraper">
+      <img [src]="imagePath" alt="" class="authForm__logo" />
+    </div>
+
+    <h1 class="authForm___title">Вход в личный кабинет</h1>
+    <div class="authForm__inputsGroup inputsGroup">
+      <input
+        [(ngModel)]="username"
+        type="text"
+        placeholder="Логин"
+        class="inputsGroup__input inputsGroup__input-first"
+        name="login"
+      />
+      <input
+        [(ngModel)]="password"
+        type="password"
+        placeholder="Пароль"
+        class="inputsGroup__input"
+        name="password"
+      />
+    </div>
+    <div class="authForm__buttonWraper buttonWraper">
+      <img [src]="iconPath" alt="" class="buttonWraper__img" />
+      <button type="submit" class="buttonWraper__btn">Войти</button>
+    </div>
+  </form>
+</main>

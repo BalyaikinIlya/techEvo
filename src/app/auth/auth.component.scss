@@ -1,0 +1,55 @@
+.authLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.authForm {
+  text-align: center;
+  &__imgWraper {
+    width: 100%;
+    text-align: center;
+  }
+  &__logo {
+    width: 53px;
+    height: 48px;
+  }
+}
+
+.inputsGroup {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  border: 1px solid #a5a5a5;
+  padding: 3px 0px;
+  &__input {
+    // border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    padding: 12px 12px;
+    &-first {
+      border-bottom: 1px solid #a5a5a5;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.buttonWraper {
+  background: #4f46e5;
+  display: flex;
+  margin-top: 23px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  &__btn {
+    border: none;
+    background: none;
+    color: #fff;
+    flex: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}

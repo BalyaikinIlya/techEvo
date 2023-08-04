@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<main class="productDetail">
+  <button (click)="goBack()" class="productDetail__btn">Назад</button>
+  <section *ngIf="product" class="productDetail__productContent productContent">
+    <div class="productContent__leftContent leftContent">
+      <img
+        class="leftContent__img"
+        [src]="product.thumbnail"
+        alt="productImage"
+      />
+      <p class="leftContent__text">Рейтинг: {{ product.rating }}</p>
+    </div>
+    <div class="productContent__rightContent">
+      <p class="rightContent__brand">{{ product.brand }}</p>
+      <h1 class="rightContent__title">{{ product.title }}</h1>
+      <p class="rightContent__description">{{ product.description }}</p>
+      <h2 class="rightContent__price">{{ product.price }}$</h2>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>

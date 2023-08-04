@@ -1,0 +1,17 @@
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__additional additional">
+      <img class="additional__logo" [src]="imagePath" alt="logo" />
+      <p class="additional__text">
+        <span class="additional__text-str">Tech</span> - Магазин техники
+      </p>
+    </div>
+    <div class="footer__links links">
+      <p class="links__header">Ссылки</p>
+      <a class="links__item" [routerLink]="['']">Главная</a>
+      <a class="links__item" [routerLink]="['/catalog']">Каталог товаров</a>
+    </div>
+  </div>
+
+  <p class="footer__underText">© 2023 Tech Marketplace</p>
+</footer>

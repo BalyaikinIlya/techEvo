@@ -1,0 +1,42 @@
+.footer {
+  padding: 60px 40px;
+
+  &__underText {
+    width: 100%;
+    color: #9ca3af;
+    text-align: center;
+    border-top: 1px solid #d4d4d4;
+    margin-top: 172px;
+    padding: 40px 0px;
+  }
+  &__container {
+    display: flex;
+    gap: 224px;
+  }
+}
+.additional {
+  &__text {
+    margin-top: 40px;
+    color: #6b7280;
+    &-str {
+      font-weight: 600;
+    }
+  }
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  &__header {
+    text-transform: uppercase;
+    color: #9ca3af;
+  }
+  &__item {
+    text-decoration: none;
+    color: #6b7280;
+    transition: 0.5s;
+    &:hover {
+      color: #4f46e5;
+    }
+  }
+}

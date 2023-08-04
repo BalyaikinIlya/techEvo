@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<main class="admin">
+  <h1 class="admin__title">Администрирование</h1>
+  <section class="admin__content">
+    <div [routerLink]="['/admin/items']" class="content__item item item-first">
+      <div class="item__header">
+        <img src="assets/img/adminIcon.png" alt="icon" />
+        <img src="assets/img/adminicon2.png" alt="icon" />
+      </div>
+      <p class="item__title">Товары</p>
+      <p class="item__subtext">Редактирование товаров</p>
+    </div>
+    <div class="content__item item">
+      <div class="item__header">
+        <img src="assets/img/adminIcon3.png" alt="icon" />
+        <img src="assets/img/adminicon2.png" alt="icon" />
+      </div>
+      <p class="item__title">Тестовый раздел (не доступно)</p>
+      <p class="item__subtext">Тестовый раздел для разработчиков</p>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>

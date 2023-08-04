@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<main class="profile">
+  <h1 class="profile__title">Личный кабинет</h1>
+  <section *ngIf="userData" class="profile__headerContent headerContent">
+    <div class="headerContent__userinfo userinfo">
+      <img [src]="userData.image" alt="avatar" class="userinfo__avatar" />
+      <p class="userinfo__username">
+        {{ userData.firstName }} {{ userData.lastName }}
+      </p>
+      <button
+        [routerLink]="['/admin']"
+        *ngIf="checkAdmin"
+        class="userinfo__admin"
+      >
+        Администирование
+      </button>
+    </div>
+  </section>
+  <section *ngIf="userData" class="profile__mainContent mainContent">
+    <p class="mainContent__title">Основная информация</p>
+    <div class="mainContent__userData userData">
+      <div class="userData__dataItem dataItem">
+        <p class="dataItem__title">Возраст</p>
+        <p class="dataItem__data">{{ userData.age }}</p>
+      </div>
+      <div class="userData__dataItem dataItem">
+        <p class="dataItem__title">email</p>
+        <p class="dataItem__data">{{ userData.email }}</p>
+      </div>
+      <div class="userData__dataItem dataItem">
+        <p class="dataItem__title">IP</p>
+        <p class="dataItem__data">{{ userData.ip }}</p>
+      </div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
