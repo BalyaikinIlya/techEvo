@@ -1,0 +1,59 @@
+.admin {
+    padding: 20px 50px;
+    &__table {
+        margin: auto;
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        border-radius: 8px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 16px;
+        color: #6B7280;
+    }
+    &__title {
+        margin-bottom: 67px;
+    }
+}
+.table {
+    
+    &__row {
+
+        &-def {
+            background: #F9FAFB;
+        }
+        &-head {
+            text-transform: uppercase;
+        }
+    }
+     &__data {
+        &-name {
+        width: 18.1%;
+        }
+        &-brand {
+            width: 24%;
+        }
+        &-price {
+            width: 27.4%;
+
+        }
+        &-rating {
+            width: 2%;
+
+        }
+        &-redact {
+            width: 10%;
+        }
+        &-itemName {
+            font-weight: 600;
+            color: #111827;
+        }
+        padding: 15px 25px;
+        &-toItem {
+            color: #4F46E5;
+            cursor: pointer;
+            transition: .5s;
+            &:hover {
+                color: #362fc5;
+            }
+        }
+     }
+}

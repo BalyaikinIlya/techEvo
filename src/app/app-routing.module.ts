@@ -8,6 +8,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { AuthGuard } from './auth.guard';
 import { AdminComponent } from './admin/admin.component';
 import { ItemsComponent } from './items/items.component';
+import { ItemEditComponent } from './item-edit/item-edit.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'catalog/:id', component: ProductDetailComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'admin/items', component: ItemsComponent },
+  { path: 'admin/items/:id', component: ItemEditComponent },
   {
     path: 'profile',
     component: ProfileComponent,

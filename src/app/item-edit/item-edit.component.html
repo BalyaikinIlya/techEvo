@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<main class="itemEdit">
+    <h1 class="itemEdit">Администрирование - Редактирование товара</h1>
+    <form  *ngIf="product" action="" class="itemEdit__form form">
+        <div class="form__wraper">
+            <p class="form__title">{{product.title}}</p>
+            <div class="form__inpuntsGroup inputsGroup">
+                <div class="inputsGroup__item  item item-first">
+                    <p class="item__header ">Название товара</p>
+                    <input [value]="product.title" name="title"  type="text" [(ngModel)]="product.title" class="item__input">
+                </div>
+                <div class="inputsGroup__item item item-first">
+                    <p class="item__header">Краткое описание</p>
+                    <input [value]="product.description" name="description"  type="text" [(ngModel)]="product.description" class="item__input">
+                </div>
+                <div class="inputsGroup__item item item-second">
+                    <p class="item__header">Цена</p>
+                    <input [value]="product.price" name="price" [(ngModel)]="product.price" type="text" class="item__input">
+                </div>
+                <div class="inputsGroup__item item item-second">
+                    <p class="item__header">Бренд</p>
+                    <input [value]="product.brand" name="brand" type="text" [(ngModel)]="product.brand" class="item__input">
+                </div>
+                <div class="inputsGroup__item item item-second">
+                    <p class="item__header">Рейтинг</p>
+                    <input [value]="product.rating" name="rating" type="text" [(ngModel)]="product.rating" class="item__input">
+                </div>
+            </div>
+        </div>
+        
+        <div class="form__buttonGroup">
+            <button (click)="goBack()"  class="buttonGroup__btn buttonGroup__btn-back">Назад</button>
+            <button (click)="sendForm()" class="buttonGroup__btn buttonGroup__btn-save">Сохранить</button>
+        </div>
+    </form>
+</main>
+<app-footer></app-footer>

@@ -17,6 +17,7 @@ import { AuthState } from './auth.state';
 import { AuthGuard } from './auth.guard';
 import { AdminComponent } from './admin/admin.component';
 import { ItemsComponent } from './items/items.component';
+import { ItemEditComponent } from './item-edit/item-edit.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ItemsComponent } from './items/items.component';
     ProductDetailComponent,
     AdminComponent,
     ItemsComponent,
+    ItemEditComponent,
   ],
   imports: [
     BrowserModule,
