@@ -18,6 +18,7 @@ import { AuthGuard } from './auth.guard';
 import { AdminComponent } from './admin/admin.component';
 import { ItemsComponent } from './items/items.component';
 import { ItemEditComponent } from './item-edit/item-edit.component';
+import { StabPageComponent } from './stab-page/stab-page.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ItemEditComponent } from './item-edit/item-edit.component';
     AdminComponent,
     ItemsComponent,
     ItemEditComponent,
+    StabPageComponent,
   ],
   imports: [
     BrowserModule,

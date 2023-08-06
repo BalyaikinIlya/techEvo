@@ -13,19 +13,27 @@ export class AuthComponent {
   username: string = '';
   password: string = '';
 
+  error:string = "";
   constructor(private authService: AuthService, private router: Router) {}
 
   onSubmit() {
     this.authService.login(this.username, this.password).subscribe(
       (response: any) => {
-        // Обработка успешного ответа от сервера (например, сохранение токена в localStorage)
         console.log('Успешная авторизация:', response);
         this.router.navigate(['/profile']);
       },
       (error) => {
-        // Обработка ошибки
         console.error('Ошибка авторизации:', error);
+        this.error = "Введены некорректные данные";
+        console.log(this.error);
       }
     );
+  }
+  validatie() {
+    if (this.password.length<5) {
+      this.error = "Длина пароля должна быть больше 5 символов"
+    } else {
+      this.onSubmit();
+    }
   }
 }

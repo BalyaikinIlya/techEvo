@@ -32,7 +32,6 @@ export class ItemEditComponent implements OnInit {
                 this.location.back();
             },
             error: error => {
-                
                 console.error('There was an error!', error);
             }
         });

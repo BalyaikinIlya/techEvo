@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <main class="authLayout">
-  <form (submit)="onSubmit()" action="" class="authForm">
+  <form (submit)="validatie()" action="" class="authForm">
     <div class="authForm__imgWraper">
       <img [src]="imagePath" alt="" class="authForm__logo" />
     </div>
@@ -25,6 +25,9 @@
     <div class="authForm__buttonWraper buttonWraper">
       <img [src]="iconPath" alt="" class="buttonWraper__img" />
       <button type="submit" class="buttonWraper__btn">Войти</button>
+    </div>
+    <div *ngIf="error" class="form__error error">
+      <p class="error__text">{{ error}}</p>
     </div>
   </form>
 </main>

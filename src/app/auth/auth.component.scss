@@ -53,3 +53,10 @@
     }
   }
 }
+
+.error {
+  &__text {
+    margin-top: 10px;
+    color: #e54b46;
+  }
+}

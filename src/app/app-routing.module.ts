@@ -9,6 +9,7 @@ import { AuthGuard } from './auth.guard';
 import { AdminComponent } from './admin/admin.component';
 import { ItemsComponent } from './items/items.component';
 import { ItemEditComponent } from './item-edit/item-edit.component';
+import { StabPageComponent } from './stab-page/stab-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent },
   { path: 'admin/items', component: ItemsComponent },
   { path: 'admin/items/:id', component: ItemEditComponent },
+  { path: '**', component: StabPageComponent },
   {
     path: 'profile',
     component: ProfileComponent,
